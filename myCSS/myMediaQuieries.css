@@ -55,5 +55,8 @@
   .right {
     text-align: start !important;
   }
+  .hide-mobile {
+    display: none !important;
+  }
 }
 /*# sourceMappingURL=myMediaQuieries.css.map */
