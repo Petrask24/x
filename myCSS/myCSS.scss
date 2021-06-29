@@ -54,6 +54,7 @@
   position: absolute !important;
   top: 0;
   width: 100%;
+  filter: blur(10px);
 }
 
 .my-header-fix {
@@ -61,17 +62,38 @@
   height: 100vh !important;
 }
 
+// @keyframes my-fade-out {
+//   25% {
+//     transform: translate(0, -2%);
+//   }
+
+//   50% {
+//     transform: translate(0, 2%);
+//   }
+
+//   100% {
+//     transform: translate(0, 4%);
+//     opacity: 0;
+//   }
+// }
+
+// @keyframes my-fade-in {
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
 @keyframes my-fade-out {
   25% {
-    transform: translate(0, -2%);
+    filter: blur(1px);
   }
 
   50% {
-    transform: translate(0, 2%);
+    filter: blur(2px);
   }
 
   100% {
-    transform: translate(0, 4%);
+    filter: blur(10px);
     opacity: 0;
   }
 }
@@ -79,5 +101,6 @@
 @keyframes my-fade-in {
   100% {
     opacity: 1;
+    filter: blur(0);
   }
 }

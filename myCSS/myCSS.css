@@ -74,6 +74,8 @@
   position: absolute !important;
   top: 0;
   width: 100%;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
 }
 
 .my-header-fix {
@@ -83,32 +85,32 @@
 
 @-webkit-keyframes my-fade-out {
   25% {
-    -webkit-transform: translate(0, -2%);
-            transform: translate(0, -2%);
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
   }
   50% {
-    -webkit-transform: translate(0, 2%);
-            transform: translate(0, 2%);
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
   }
   100% {
-    -webkit-transform: translate(0, 4%);
-            transform: translate(0, 4%);
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
     opacity: 0;
   }
 }
 
 @keyframes my-fade-out {
   25% {
-    -webkit-transform: translate(0, -2%);
-            transform: translate(0, -2%);
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
   }
   50% {
-    -webkit-transform: translate(0, 2%);
-            transform: translate(0, 2%);
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
   }
   100% {
-    -webkit-transform: translate(0, 4%);
-            transform: translate(0, 4%);
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
     opacity: 0;
   }
 }
@@ -116,12 +118,16 @@
 @-webkit-keyframes my-fade-in {
   100% {
     opacity: 1;
+    -webkit-filter: blur(0);
+            filter: blur(0);
   }
 }
 
 @keyframes my-fade-in {
   100% {
     opacity: 1;
+    -webkit-filter: blur(0);
+            filter: blur(0);
   }
 }
 /*# sourceMappingURL=myCSS.css.map */
