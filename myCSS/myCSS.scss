@@ -55,12 +55,13 @@
   top: 0;
   width: 100%;
   filter: blur(10px);
+
+  &.my-btn {
+    position: fixed !important;
+  }
 }
 
-.my-header-fix {
-  top: -30px;
-  height: 100vh !important;
-}
+
 
 // @keyframes my-fade-out {
 //   25% {

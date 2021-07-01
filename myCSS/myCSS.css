@@ -78,9 +78,8 @@
           filter: blur(10px);
 }
 
-.my-header-fix {
-  top: -30px;
-  height: 100vh !important;
+.my-fade-in.my-btn {
+  position: fixed !important;
 }
 
 @-webkit-keyframes my-fade-out {
@@ -130,4 +129,4 @@
             filter: blur(0);
   }
 }
-/*# sourceMappingURL=myCSS.css.map */
+/*# sourceMappingURL=mycss.css.map */

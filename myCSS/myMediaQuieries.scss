@@ -36,7 +36,7 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   /* For mobile phones: */
   [class*="my-col-"] {
     width: 100%;
@@ -48,5 +48,24 @@
 
   .hide-mobile {
     display: none !important;
+  }
+
+  header {
+    &.my-fade-in {
+      position: fixed !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* For desktop only: */
+
+  .hide-desktop {
+    display: none !important;
+  }
+
+  .my-header-fix {
+    top: -30px;
+    height: 100vh !important;
   }
 }
