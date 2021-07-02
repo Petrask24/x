@@ -95,6 +95,7 @@
     -webkit-filter: blur(10px);
             filter: blur(10px);
     opacity: 0;
+    display: none;
   }
 }
 
@@ -111,6 +112,7 @@
     -webkit-filter: blur(10px);
             filter: blur(10px);
     opacity: 0;
+    display: none;
   }
 }
 
