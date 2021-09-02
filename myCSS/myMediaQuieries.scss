@@ -62,6 +62,11 @@
     flex-direction: column;
     z-index: 100;
   }
+
+  .section {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
 }
 
 @media only screen and (min-width: 992px) {
