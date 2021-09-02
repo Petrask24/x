@@ -2,47 +2,36 @@
 .my-col-1 {
   width: 8.33%;
 }
-
 .my-col-2 {
   width: 16.66%;
 }
-
 .my-col-3 {
   width: 25%;
 }
-
 .my-col-4 {
   width: 33.33%;
 }
-
 .my-col-5 {
   width: 41.66%;
 }
-
 .my-col-6 {
   width: 50%;
 }
-
 .my-col-7 {
   width: 58.33%;
 }
-
 .my-col-8 {
   width: 66.66%;
 }
-
 .my-col-9 {
   width: 75%;
 }
-
 .my-col-10 {
   width: 83.33%;
 }
-
 .my-col-11 {
   width: 91.66%;
 }
-
 .my-col-12 {
   width: 100%;
 }
@@ -52,36 +41,31 @@
   [class*="my-col-"] {
     width: 100%;
   }
+
+  .right {
+    text-align: start !important;
+  }
+
   .hide-mobile {
     display: none !important;
   }
-  .name-picture {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .nav-ul {
-    position: fixed;
-    top: 0;
-    display: none;
-    background: white;
-    margin: 0;
-    padding: 0;
-    bottom: 0;
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    z-index: 100;
+
+  header {
+    &.my-fade-in {
+      position: fixed !important;
+    }
   }
 }
 
 @media only screen and (min-width: 992px) {
   /* For desktop only: */
+
   .hide-desktop {
     display: none !important;
   }
+
+  .my-header-fix {
+    top: -30px;
+    height: 100vh !important;
+  }
 }
-/*# sourceMappingURL=myMediaQuieries.css.map */

@@ -4,10 +4,271 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; URL=/livewhale/" />
-    <title>Chris Petraskie</title>
+    <!-- <meta http-equiv="refresh" content="0; URL=/livewhale/" /> -->
+    <link rel="stylesheet" href="myCSS/LandingCSS.css">
+    <link rel="stylesheet" href="myCSS/header.css">
+    <link rel="stylesheet" href="myCSS/myMediaQuieries.css">
+    <link rel="stylesheet" href="myCSS/hamburger.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
+    <script src="myJS/myJS.js"></script>
+<title>Chris Petraskie</title>
 </head>
 <body>
-    
+
+    <header>
+        <div class="hero">
+            <div class="name-picture">
+                <img src="assets/me.jpg">
+                <h1>Christopher Petraskie</h1>
+            </div>
+          </div>
+    </header>
+    <nav>
+        <ul class="nav-ul">
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#about-me">About</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <div class="hamburger hide-desktop">
+            <label for="check">
+                <input type="checkbox" id="check"/> 
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-bar-inner"></div>
+        </div>
+    </nav>
+
+    <div class="section" id="experience">
+        <h2 class="heading">My Experience:</h2>
+        <h3 class="heading-title web-dev">Web Developer</h3>
+        <a class="heading-link gpa" href="https://www.susqu.edu/campus-life/student-and-campus-services/information-technology-and-helpdesk" target="_blank">
+            Information Technology, Susquehanna University
+        </a>
+        <p>
+            After graduating college I received an offer from Susquehanna to be their Web Developer. I gladly accepted and started working on July 8, 2020 during the COVID-19 pandemic and worked remote until August 3, 2020.
+            This was a difficult time, especially because we had just hired four new assistant web developers who all needed to be trained from scratch.
+            They were also trained through two weekly zoom meetings for several months and went through a series of LinkedIn learning courses.
+            Along with this, the university partnered with <a href="https://www.livewhale.com/?home" target="_blank">LiveWhale</a> for their <a href="https://www.livewhalecalendar.com/" target="_blank">calendar</a>, and later decided to fully migrate to their content management system.
+            This was also when our department integrated a new ticketing system, <a href="https://susqu.teamdynamix.com/TDClient/2319/Portal/Home/" target="_blank">Team Dynamix.</a>
+        </p>
+        <p>
+            <em>Position Summary</em>
+        </p>
+        <ul>
+            <li>Created and maintained responsive custom web applications using an ASP.NET (MVC 5) stack 
+            </li>
+            <li>Trained and managed up to four student assistant web developers
+            </li>
+            <li>Trained to work within the Ingeniux content management system 
+            </li>
+            <li>Played a major role in the transfer process between content management systems 
+            </li>
+            <li>Utilized and designed the university’s new IT service management system Team Dynamix
+            </li>
+        </ul>
+
+        <h3 class="heading-title assistant-web-dev">Assistant Web Developer</h3>
+        <a class="heading-link gpa" href="https://www.susqu.edu/campus-life/student-and-campus-services/information-technology-and-helpdesk" target="_blank">
+            Information Technology, Susquehanna University
+        </a>
+        <p>
+            Coming into the position of assistant web developer, I didn't know much about the position. I knew some basic HTML and did some w3schools tutorials to learn
+            CSS and JavaScript. Then came the server side coding which really threw me for a loop for a while. However, I really enjoy coding in C# today and would say it 
+            is probably one of my favorite languages. I was mostly self taught, though I had another student programmer who gave me some tips and tricks along the way.
+        </p>
+        <p>
+            <em>Position Summary</em>
+        </p>
+        <ul>
+            <li>Works with Enterprise Systems team to develop and maintain various aspects of university websites 
+            </li>
+            <li>Improved a campus-wide Graphical Schedule that students can view for their courses each semester 
+            </li>
+            <li>Added functionality for athletic coaches to view and download team schedules 
+            </li>
+            <li>Complete overhaul of the Susquehanna University Student/Faculty/Staff directory 
+            </li>
+        </ul>
+        <!-- <p>
+            <em>Acquired skill sets</em>
+        </p>
+        <ul>
+            <li>Well developed skills in HTML &amp; CSS, including the use of the LESS and SASS frameworks
+            </li>
+            <li>Well familiarized with jQuery/JavaScript
+            </li>
+            <li>Works well with others and always treats clients well
+            </li>
+            <li>Solid understanding of web accessibility and accessibility testing resources
+            </li>
+        </ul> -->
+    </div>
+
+    <div class="section" id="education">
+        <h2 class="heading">My Education:</h2>
+        <h3 class="heading-title su-cs-grad">Bachelor of Science: Computer Science</h3>
+        <a class="heading-link gpa" href="https://www.susqu.edu/academics/majors-and-minors/department-of-mathematics-and-computer-science/computer-science" target="_blank">
+            Susquehanna University, Selinsgrove, PA
+        </a>
+        <h3 class="heading-title bu-cs-grad">Bachelor of Science: Computer Science</h3>
+        <a class="heading-link" href="https://www.bucknell.edu/academics/college-engineering/majors-departments/computer-science" target="_blank">
+            Bucknell University, Lewisburg, PA 
+          </a>
+        <h3 class="heading-title study-abroad">Bachelor of Science: Computer Science</h3>
+        <a class="heading-link" href="https://go.susqu.edu/index.cfm?FuseAction=Programs.ViewProgramAngular&id=35714" target="_blank">
+            Study Abroad: Patagonia
+        </a>
+    </div>
+
+    <div class="section" id="about-me">
+        <h1 class="heading">About Me</h1>
+        <p>
+            I'm a web developer actively seeking opportunities to grow in my field and expand 
+            my knowledge in all areas of computer science. I started as a web developer the same 
+            way I assume most people would have, being born a 90's baby - through Myspace! I 
+            decided to sign up because my sister was always talking about it, and everyone seemed 
+            to have one. You could edit your own page just by copy and pasting some text from other 
+            websites! Or *blast* some music for everyone to hear when they view your page! There was 
+            SO much creativity on everyone's page. It still has a best friends feature, which was 
+            always the best way to start some unnecessary drama! Looking back on it, I believe it 
+            was the best social media created by far.
+        </p>
+
+        <h2 class="heading-title">Things I Enjoy</h2>
+        
+        <p>
+            One of the things I enjoy most in life is music. It doesn't matter what genre, I can listen 
+            to pretty much anything. But we all have our favorites, right? Don't get me wrong, I dabbled 
+            with a good bit of country in college and heard just about every oldie ever recorded from my parents, 
+            but for me nothing beats punk rock. My first concert ever was seeing Blink-182 for my sixteenth 
+            birthday, who still happens to be my favorite band. I started learning to play the guitar about five 
+            years ago and still really enjoy picking it up every now and then.
+            
+            I also really enjoy being active and playing sports. I played basketball and baseball from a very 
+            young age, and later found Track & Field to be my bread and butter. I was always an active kid and 
+            when it came time to test my athleticism, there wasn't really an event I couldn't see myself doing. 
+            Later in college, I became a seven event indoor athlete by participating in the heptathlon. My 
+            outdoor season was unexpectedly cut short by COVID-19, where I would have participated in ten 
+            events for the decathlon. It has been hard to find time in my post-collegiate career to continue 
+            working out at the level I loved to compete at, but I intend to get after it again in the near future.
+        </p>
+
+        <h2>Where I'm From</h2>
+
+        <p>
+            Since I was born, I've grown up in a small city in central Pennsylvania called Shamokin, PA. 
+            I graduated high school in 2016 and later began my first semester of college at Bucknell University. 
+            However, it did not take me long to realize that this was not the university I belonged to. 
+            This was when I decided to transfer to a university nearby, Susquehanna. I had been around 
+            Susquehanna nearly my entire life, from attending basketball tournaments to district championship 
+            track meets. It felt like home before I ever got there. I spent the rest of my undergrad there and 
+            earned my bachelor's degree in Computer Science. 
+        </p>
+
+        <h3 class="heading-title track">Men's Indoor and Outdoor Track and Field</h3>
+        <a class="heading-link" href="https://suriverhawks.com/sports/mens-track-and-field" target="_blank">
+            Susquehanna University, NCAA Division III
+        </a>
+        <p>
+            I would say one of the most notable things I've done in my life so far has to have been my
+            <a href="https://suriverhawks.com/sports/mens-track-and-field/roster/chris-petraskie/7526" target="_blank">
+              track career.
+            </a>
+            I have absolutely loved competing in sports throughout my entire life. My favorites to play are basketball
+            and baseball, but I quickly learned that my athleticism would take me much further in Track and Field. This lead to dedicating a
+            large portion of time throughout high school and college to practicing and competing with my team. After about ten years, the highlight of my
+            career, which was when I <em>almost</em> competed at the 2020 Men's NCAA Division III Track &amp; Field Championships, was taken away by
+            COVID-19. The link to my profile features some funny mustache pictures for my last conference championship meet and are a <strong>must</strong> see.
+        </p>
+        <p>
+            <em>Career Summary</em>
+        </p>
+        <ul>
+            <li>All American (2020) &amp; Academic All American (2019) in multiple events 
+            </li>
+            <li>Six-time Landmark Conference Field Athlete of the Year (2017, 2018, 2019, 2020) 
+            </li>
+            <li>Landmark Conference Championships: 20+ Time Medalist 
+            </li>
+            <li>Susquehanna Record Holder: Long Jump (Indoor), Heptathlon 
+            </li>
+        </ul>
+        <p>
+            <em>Acquired skill sets</em>
+        </p>
+        <ul>
+            <li>Self motivated in a team environment
+            </li>
+            <li>Strong work ethic
+            </li>
+            <li>Always ready for a challenge
+            </li>
+            <li>Interest in learning and putting in the effort to be really good at something
+            </li>
+        </ul>
+        <h3 class="heading-title fraternity">Fraternity President, Secretary</h3>
+        <a class="heading-link" href="https://www.instagram.com/susky_pkp/" target="_blank">
+            Pi Kappa Phi - Susquehanna University
+        </a>
+        <p>
+            One thing I never thought I would do is join a fraternity. Somehow at the start of my sophomore year I
+            was convinced to join. This pretty much sums up the whole experience because I never expected anything
+            that happened next. I immediately became president and had to lead an entire group of men through weekly
+            executive council and chapter meetings, philanthropy and brotherhood events, and attend major events such as
+            <a href="https://pikapp.org/events/pi-kapp-college-for-chapter-officers/">Pi Kap College for Chapter Officers</a>
+            in Pittsburgh, PA and the <a href="https://pikapp.org/events/supreme-chapter/">51st Supreme Chapter</a> in Chicago, Illinois.
+        </p>
+        <p>
+            After my time as president, I joined the executive council again as Secretary to help maintain the structure of the
+            one previous. I kept chapter minutes weekly and played an important roll in implementing an app know as
+            <a href="https://www.ourhouse.us/">OurHouse</a> to help with organization and accountability within the chapter. For my last semester,
+            I became the social chair and planned weekly mixers and brotherhood events with other organizations on campus, as well as our Spring
+            formal which ended up being cancelled by COVID-19.
+        </p>
+        <p>
+            <em>Position Summary</em>
+        </p>
+        <ul>
+            <li>Manage Executive Council and Officer Positions to run chapter meetings efficiently 
+            </li>
+            <li>Communicate with students, staff, and alumni to benefit the chapter 
+            </li>
+            <li>Raise awareness to The Ability Experience which supports individuals with disabilities 
+            </li>
+            <li>Kept chapter minutes and submitted a semesterly green report 
+            </li>
+        </ul>
+        <p>
+            <em>Acquired skill sets</em>
+        </p>
+        <ul>
+            <li>Leadership over 30+ active members
+            </li>
+            <li>Delegating work with others
+            </li>
+            <li>Planning and Organization 
+            </li>
+            <li>Ability to run a focused meeting to achieve a common goal
+            </li>
+        </ul>
+    </div>
+
+
 </body>
 </html>

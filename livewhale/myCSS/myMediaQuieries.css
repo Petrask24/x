@@ -52,29 +52,14 @@
   [class*="my-col-"] {
     width: 100%;
   }
+  .right {
+    text-align: start !important;
+  }
   .hide-mobile {
     display: none !important;
   }
-  .name-picture {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .nav-ul {
-    position: fixed;
-    top: 0;
-    display: none;
-    background: white;
-    margin: 0;
-    padding: 0;
-    bottom: 0;
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    z-index: 100;
+  header.my-fade-in {
+    position: fixed !important;
   }
 }
 
@@ -82,6 +67,10 @@
   /* For desktop only: */
   .hide-desktop {
     display: none !important;
+  }
+  .my-header-fix {
+    top: -30px;
+    height: 100vh !important;
   }
 }
 /*# sourceMappingURL=myMediaQuieries.css.map */
