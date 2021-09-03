@@ -53,7 +53,7 @@ function submitEmail() {
         $(".message").val()
     )
     Email.send({
-        SecureToken : "b88f4d0c-c1d6-4b97-a06c-6f82bf6c8b4a",
+        SecureToken : "c0d1ada8-bbb0-412f-a9a4-27219cd14c9b",
         To : 'chris.petraskie@gmail.com',
         From : $(".email").val(),
         Subject : "Email From" + $(".name").val(),
