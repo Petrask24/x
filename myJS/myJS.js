@@ -17,6 +17,40 @@ $(document).ready(function() {
         // console.log(percent);
     })
 
+    // Get the modal
+    const modalSuccess = document.getElementById("myModal-success");
+    const modalError = document.getElementById("myModal-error");
+
+    // Get the <span> element that closes the modal
+    const spanSuccess = $("#modal-success-close");
+    const spanError = $("#modal-error-close");
+
+    // When the user clicks on <span> (x), close the modal
+    $(spanSuccess).click(function() {
+        $(modalSuccess).css({
+            display: "none"
+        })
+    });
+    $(spanError).click(function() {
+        $(modalError).css({
+            display: "none"
+        })
+    });
+
+    // When the user clicks anywhere outside of the modal, close it
+    $(window).click(function(event) {
+        if (event.target == modalSuccess) {
+            $(modalSuccess).css({
+                display: "none"
+            })
+        }
+        else if (event.target == modalError) {
+            $(modalError).css({
+                display: "none"
+            })
+        }
+    });
+
     $(".hamburger").click(function() {
         if ($("#check").is(':checked')) {
             $(".nav-ul").slideDown({
@@ -26,8 +60,10 @@ $(document).ready(function() {
                     })
                 }
             });
+            $(".contact-us").hide();
         } else {
             $(".nav-ul").slideUp();
+            $(".contact-us").show();
         }
     })
 
@@ -36,32 +72,6 @@ $(document).ready(function() {
             $("#check").click();
         }
     })
-      
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on the button, open the modal
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    } 
 })
 
 // When the user clicks on the button, scroll to the top of the document
@@ -71,7 +81,7 @@ function topFunction() {
 } 
 
 function submitEmail() {
-    var modal = document.getElementById("myModal");
+    const modal = $("#myModal");
 
     // https://smtpjs.com/
     Email.send({
@@ -81,6 +91,24 @@ function submitEmail() {
         Subject : "Email From " + $(".name").val(),
         Body : $(".message").val()
     }).then(
-        modal.style.display = "block"
+        message => openModal(message)
     );
+}
+
+function openModal(message) {
+        const modalSuccess = $("#myModal-success");
+        const modalError = $("#myModal-error");
+        if (message == "OK") {
+        // Get the modal
+        modalSuccess.css({
+            display: "block"
+        })
+    }
+    else {
+        $("#modal-error").text(message);
+        // Get the modal
+        modalError.css({
+            display: "block"
+        })
+    }
 }

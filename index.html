@@ -368,7 +368,7 @@
         </ul>
     </div>
     <div class="section" id="contact">
-        <div class="wrapper">
+        <div class="contact-us">
             <form class="form">
               <div class="pageTitle title">Contact Me</div>
               <div class="secondaryTitle title">Please fill this form to leave a message.</div>
@@ -381,15 +381,27 @@
     </div>
     <div class="modal">
     </div>
-    <div id="myModal" class="modal">
+    <div id="myModal-success" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="close">&times;</span>
+                <span class="close" id="modal-success-close">&times;</span>
                 <h2>Email Received</h2>
             </div>
             <div class="modal-body">
                 <h3>Thank you for your message, I'll get back to you as soon as possible!</h3>
+            </div>
+        </div>
+    </div>
+    <div id="myModal-error" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" id="modal-error-close">&times;</span>
+                <h2>There was an error with your request.</h2>
+            </div>
+            <div class="modal-body">
+                <h3 id="modal-error"></h3>
             </div>
         </div>
     </div>
