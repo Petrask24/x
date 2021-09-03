@@ -1,0 +1,135 @@
+.form {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+          box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+  border-radius: 5px;
+  min-width: 300px;
+  max-width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 5px solid #66FCF1;
+  /*   z-index: 1; */
+  -webkit-animation: bounce 1.5s infinite;
+          animation: bounce 1.5s infinite;
+}
+
+::-webkit-input-placeholder {
+  font-size: 1.3em;
+}
+
+.title {
+  display: block;
+  font-family: sans-serif;
+  margin: 10px auto 5px;
+  max-width: 260px;
+}
+
+.termsConditions {
+  margin: 0 auto 5px 80px;
+}
+
+.pageTitle {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.secondaryTitle {
+  color: #707070;
+}
+
+.name {
+  background-color: #ebebeb;
+  color: #3F3F3F;
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.name:hover {
+  border-bottom: 5px solid #66FCF1;
+  height: 30px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+.email {
+  background-color: #ebebeb;
+  height: 2em;
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.email:hover {
+  border-bottom: 5px solid #66FCF1;
+  height: 30px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+.message {
+  background-color: #ebebeb;
+  overflow: hidden;
+  height: 10rem;
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.message:hover {
+  border-bottom: 5px solid #66FCF1;
+  height: 12em;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+.formEntry {
+  display: block;
+  margin: 30px auto;
+  min-width: 260px;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.submit {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+  color: #FFFFFF;
+  background-color: #202020;
+  font-size: 20px;
+}
+
+.submit:hover {
+  -webkit-box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+          box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border-top: 5px solid #3F3F3F;
+  border-radius: 0%;
+  cursor: pointer;
+}
+
+@-webkit-keyframes bounce {
+  50% {
+    -webkit-transform: translate(0, 8px);
+            transform: translate(0, 8px);
+  }
+}
+
+@keyframes bounce {
+  50% {
+    -webkit-transform: translate(0, 8px);
+            transform: translate(0, 8px);
+  }
+}
+/*# sourceMappingURL=contact.css.map */

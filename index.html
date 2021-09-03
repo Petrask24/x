@@ -9,14 +9,21 @@
     <link rel="stylesheet" href="myCSS/header.css">
     <link rel="stylesheet" href="myCSS/myMediaQuieries.css">
     <link rel="stylesheet" href="myCSS/hamburger.css">
+    <link rel="stylesheet" href="myCSS/contact.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="myJS/myJS.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 <title>Chris Petraskie</title>
 </head>
 <body>
+
+    <div id="to-top" class="to-top hide-desktop" onclick="topFunction()">
+        <i class="fas fa-long-arrow-alt-up fa-3x"></i>
+    </div>
 
     <header>
         <div class="hero">
@@ -56,10 +63,19 @@
 
     <div class="section" id="experience">
         <h2 class="heading">My Experience:</h2>
-        <h3 class="heading-title web-dev">Web Developer</h3>
-        <a class="heading-link gpa" href="https://www.susqu.edu/campus-life/student-and-campus-services/information-technology-and-helpdesk" target="_blank">
-            Information Technology, Susquehanna University
-        </a>
+        <div class="row">
+            <div class="col-8">
+                <h3 class="heading-title web-dev">Web Developer</h3>
+                <a class="heading-link gpa" href="https://www.susqu.edu/campus-life/student-and-campus-services/information-technology-and-helpdesk" target="_blank">
+                    Information Technology, Susquehanna University
+                </a>
+            </div>
+            <div class="col-4 right">
+                <h3 class="heading-date">June 2020 - Present</h3>
+            </div>
+        </div>
+        
+        
         <p>
             After graduating college I received an offer from Susquehanna to be their Web Developer. I gladly accepted and started working on July 8, 2020 during the COVID-19 pandemic and worked remote until August 3, 2020.
             This was a difficult time, especially because we had just hired four new assistant web developers who all needed to be trained from scratch.
@@ -83,10 +99,18 @@
             </li>
         </ul>
 
-        <h3 class="heading-title assistant-web-dev">Assistant Web Developer</h3>
-        <a class="heading-link gpa" href="https://www.susqu.edu/campus-life/student-and-campus-services/information-technology-and-helpdesk" target="_blank">
-            Information Technology, Susquehanna University
-        </a>
+        <div class="row">
+            <div class="col-8">
+                <h3 class="heading-title assistant-web-dev">Assistant Web Developer</h3>
+                <a class="heading-link gpa" href="https://www.susqu.edu/campus-life/student-and-campus-services/information-technology-and-helpdesk" target="_blank">
+                    Information Technology, Susquehanna University
+                </a>
+            </div>
+            <div class="col-4 right">
+                <h3 class="heading-date">2018 - 2020</h3>
+            </div>
+        </div>
+        
         <p>
             Coming into the position of assistant web developer, I didn't know much about the position. I knew some basic HTML and did some w3schools tutorials to learn
             CSS and JavaScript. Then came the server side coding which really threw me for a loop for a while. However, I really enjoy coding in C# today and would say it 
@@ -122,18 +146,77 @@
 
     <div class="section" id="education">
         <h2 class="heading">My Education:</h2>
-        <h3 class="heading-title su-cs-grad">Bachelor of Science: Computer Science</h3>
-        <a class="heading-link gpa" href="https://www.susqu.edu/academics/majors-and-minors/department-of-mathematics-and-computer-science/computer-science" target="_blank">
-            Susquehanna University, Selinsgrove, PA
-        </a>
-        <h3 class="heading-title bu-cs-grad">Bachelor of Science: Computer Science</h3>
-        <a class="heading-link" href="https://www.bucknell.edu/academics/college-engineering/majors-departments/computer-science" target="_blank">
-            Bucknell University, Lewisburg, PA 
-          </a>
-        <h3 class="heading-title study-abroad">Bachelor of Science: Computer Science</h3>
-        <a class="heading-link" href="https://go.susqu.edu/index.cfm?FuseAction=Programs.ViewProgramAngular&id=35714" target="_blank">
-            Study Abroad: Patagonia
-        </a>
+        <div class="row">
+            <div class="col-8">
+                <h3 class="heading-title su-cs-grad">Bachelor of Science: Computer Science</h3>
+            <a class="heading-link gpa" href="https://www.susqu.edu/academics/majors-and-minors/department-of-mathematics-and-computer-science/computer-science" target="_blank">
+                Susquehanna University, Selinsgrove, PA
+            </a>
+            </div>
+            <div class="col-4 right">
+                <h3 class="heading-date">May 2020</h3>
+                <h3 class="heading-date">Cumulative GPA: 3.66/4.0</h3>
+            </div>
+        </div>
+        <em>Relevant Coursework:</em>
+        <div class="row">
+            <div class="col-6">
+                <ul>
+                    <li>CSCI-181 Principles of Computer Science</li>
+                    <li>CSCI-281 Data Structures</li>
+                    <li>CSCI-282 Computer Organization</li>
+                    <li>CSCI-301 Data Mining</li>
+                    <li>CSCI-381 Algorithms</li>
+                    <li>CSCI-391 Data Commun/Networks I</li>
+                    <li>CSCI-392 Data Commun/Networks II</li>
+                    <li>CSCI-460 Windows Programming</li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <ul>
+                    <li>CSCI-481 Programming Languages</li>
+                    <li>CSCI-483 Compiler Theory</li>
+                    <li>CSCI-484 Computer Graphics</li>
+                    <li>CSCI-486 Intro to Operating Systems</li>
+                    <li>CSCI-487 Operating Systems</li>
+                    <li>CSCI-488 Computer Architecture</li>
+                    <li>CSCI-501 Parallel Computing</li>
+                    <li>CSCI-501 Database Programming</li>
+                </ul>
+            </div>
+        </div>
+        <h3 class="heading-title">Minor in Mathematics</h3>
+        <em>Relevant Coursework:</em>
+        <div class="row">
+            <div class="col-6">
+                <ul>
+                    <li>MATH-111 Calculus I</li>
+                    <li>MATH-112 Calculus II</li>
+                    <li>MATH-180 Statistical Methods</li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <ul>
+                    <li>MATH-201 Linear Algebra</li>
+                    <li>MATH-221 Discrete Structures</li>
+                    <li>MATH-353 Differential Equations</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-8">
+                <h3 class="heading-title study-abroad">Study Abroad: Patagonia </h3>
+                <a class="heading-link" href="https://go.susqu.edu/index.cfm?FuseAction=Programs.ViewProgramAngular&amp;id=35714" target="_blank">
+                    Argentina, South America
+                  </a>
+            </div>
+            <div class="col-4 right">
+                <h3 class="heading-date">January 2020</h3>
+            </div>
+        </div>
+        <em>Submersed in a foreign culture to learn, study, and partake in various activities</em>
+        
     </div>
 
     <div class="section" id="about-me">
@@ -181,10 +264,18 @@
             earned my bachelor's degree in Computer Science. 
         </p>
 
-        <h3 class="heading-title track">Men's Indoor and Outdoor Track and Field</h3>
-        <a class="heading-link" href="https://suriverhawks.com/sports/mens-track-and-field" target="_blank">
-            Susquehanna University, NCAA Division III
-        </a>
+        <div class="row">
+            <div class="col-8">
+                <h3 class="heading-title track">Men's Indoor and Outdoor Track and Field</h3>
+                <a class="heading-link" href="https://suriverhawks.com/sports/mens-track-and-field" target="_blank">
+                    Susquehanna University, NCAA Division III
+                </a>
+            </div>
+            <div class="col-4 right">
+                <h3 class="heading-date">January 2017 - May 2020</h3>
+            </div>
+        </div>
+        
         <p>
             I would say one of the most notable things I've done in my life so far has to have been my
             <a href="https://suriverhawks.com/sports/mens-track-and-field/roster/chris-petraskie/7526" target="_blank">
@@ -222,10 +313,18 @@
             <li>Interest in learning and putting in the effort to be really good at something
             </li>
         </ul>
-        <h3 class="heading-title fraternity">Fraternity President, Secretary</h3>
-        <a class="heading-link" href="https://www.instagram.com/susky_pkp/" target="_blank">
-            Pi Kappa Phi - Susquehanna University
-        </a>
+        <div class="row">
+            <div class="col-8">
+                <h3 class="heading-title fraternity">Fraternity President, Secretary</h3>
+                <a class="heading-link" href="https://www.instagram.com/susky_pkp/" target="_blank">
+                    Pi Kappa Phi - Susquehanna University
+                </a>
+            </div>
+            <div class="col-4 right">
+                <h3 class="heading-date">January 2018 - December 2019</h3>
+            </div>
+        </div>
+        
         <p>
             One thing I never thought I would do is join a fraternity. Somehow at the start of my sophomore year I
             was convinced to join. This pretty much sums up the whole experience because I never expected anything
@@ -268,7 +367,18 @@
             </li>
         </ul>
     </div>
-
+    <div class="section" id="contact">
+        <div class="wrapper">
+            <form class="form">
+              <div class="pageTitle title">Contact Me</div>
+              <div class="secondaryTitle title">Please fill this form to leave a message.</div>
+              <input type="text" class="name formEntry" placeholder="Name" />
+              <input type="text" class="email formEntry" placeholder="Email"/>
+              <textarea class="message formEntry" placeholder="Message"></textarea>
+              <button type="button" class="submit formEntry" onclick="submitEmail()">Submit</button>
+            </form>
+          </div>
+    </div>
 
 </body>
 </html>
