@@ -1,7 +1,7 @@
 $Blackish: #202020;
 $Dark-Grey: #3F3F3F;
 $Medium-Grey: #707070;
-$Cyan: #66FCF1;
+$Primary: #8b210b;
 $White: #FFFFFF;
 
 .hamburger {
@@ -19,7 +19,7 @@ $White: #FFFFFF;
       }
       
       label span{
-        background: $Blackish;
+        background: $White;
         border-radius:10px;
         height:7px;
         margin: 7px 0;

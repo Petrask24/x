@@ -2,12 +2,12 @@ $Blackish: #202020;
 $Dark-Grey: #3F3F3F;
 $Medium-Grey: #707070;
 $Light-Grey: #ebebeb;
-$Cyan: #66FCF1;
+$Primary: #8b210b;
 $White: #FFFFFF;
 
 .form {
     background: $White;
-    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+    box-shadow: 0 30px 60px 0 rgba($Primary, 0.4);
     border-radius: 5px;
     min-width: 300px;
     max-width: 50vw;
@@ -18,7 +18,7 @@ $White: #FFFFFF;
     // left: 0;
     // right: 0;
     // position: absolute;
-    border-top: 5px solid $Cyan;
+    border-top: 5px solid $Primary;
   /*   z-index: 1; */
     animation: bounce 1.5s infinite;
   }
@@ -51,7 +51,7 @@ $White: #FFFFFF;
     transform: scale(.96);
   }
   .name:hover {
-    border-bottom: 5px solid $Cyan;
+    border-bottom: 5px solid $Primary;
     height: 30px;
     transform: scale(1);
     transition: ease 0.5s;
@@ -64,7 +64,7 @@ $White: #FFFFFF;
   }
   
   .email:hover {
-    border-bottom: 5px solid $Cyan;
+    border-bottom: 5px solid $Primary;
     height: 30px;
     transform: scale(1);
     transition: ease 0.5s;
@@ -79,7 +79,7 @@ $White: #FFFFFF;
   }
   
   .message:hover {
-    border-bottom: 5px solid $Cyan;
+    border-bottom: 5px solid $Primary;
     height: 12em;
     transform: scale(1);
     transition: ease 0.5s;
@@ -107,7 +107,7 @@ $White: #FFFFFF;
     box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
     transform: translateY(-3px);
     transform: scale(1);
-    border-top: 5px solid $Cyan;
+    border-top: 5px solid $Primary;
     border-radius: 0%;
     cursor: pointer;
   }
@@ -161,7 +161,7 @@ $White: #FFFFFF;
 
 .modal-header {
   padding: 2px 16px;
-  background-color: $Cyan;
+  background-color: $Primary;
   color: $White;
 }
 
@@ -172,7 +172,7 @@ $White: #FFFFFF;
 
 .modal-footer {
   padding: 2px 16px;
-  background-color: $Cyan;
+  background-color: $Primary;
   color: $White;
 }
 

@@ -1,0 +1,115 @@
+$Blackish: #202020;
+$Dark-Grey: #3F3F3F;
+$Medium-Grey: #707070;
+$Light-Grey: #ebebeb;
+$Primary: #8b210b;
+$White: #FFFFFF;
+
+.my-heading {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .my-heading-title {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      margin-bottom: 5px;
+    }
+
+    h5 {
+      margin-bottom: 5px;
+      color: $Medium-Grey;
+    }
+
+    span {
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+
+    a {
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+  }
+
+  .right {
+    text-align: end;
+  }
+}
+
+.my-fade-out {
+  animation-name: my-fade-out;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.my-fade-in {
+  animation-name: my-fade-in;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+  filter: blur(10px);
+
+  &.my-btn {
+    position: fixed !important;
+  }
+}
+
+
+
+// @keyframes my-fade-out {
+//   25% {
+//     transform: translate(0, -2%);
+//   }
+
+//   50% {
+//     transform: translate(0, 2%);
+//   }
+
+//   100% {
+//     transform: translate(0, 4%);
+//     opacity: 0;
+//   }
+// }
+
+// @keyframes my-fade-in {
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+@keyframes my-fade-out {
+  25% {
+    filter: blur(1px);
+  }
+
+  50% {
+    filter: blur(2px);
+  }
+
+  100% {
+    filter: blur(10px);
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes my-fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}

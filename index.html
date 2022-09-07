@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="myCSS/myMediaQuieries.css">
     <link rel="stylesheet" href="myCSS/hamburger.css">
     <link rel="stylesheet" href="myCSS/contact.css">
+    <link rel="stylesheet" href="myCSS/download.css">
+    <link rel="stylesheet" href="myCSS/timeline.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet"> 
@@ -25,14 +27,15 @@
         <i class="fas fa-long-arrow-alt-up fa-3x"></i>
     </div>
 
-    <header>
-        <div class="hero">
-            <div class="name-picture">
-                <img src="assets/me.jpg">
-                <h1>Christopher Petraskie</h1>
-            </div>
-          </div>
-    </header>
+    <div class="hero">
+        <div class="welcome-text">
+            <h1>I'm Chris Petraskie</h1>
+            <h2>Welcome to my website!</h2>
+            <h5>*This page was created to act as a personal portfolio, not an all inclusive representation of my skills*</h5>
+        </div>
+        <img src="assets/me-removebg.png" class="my-img">
+    </div>
+
     <nav>
         <ul class="nav-ul">
             <li>
@@ -46,6 +49,23 @@
             </li>
             <li>
                 <a href="#contact">Contact</a>
+            </li>
+            <li>
+                <div class="download">
+                    <a class="face-button" href="./assets/Resume.zip" download>
+
+                        <div class="face-primary">
+                            <span class="icon fa fa-cloud"></span>
+                            Resume
+                        </div>
+                        
+                        <div class="face-secondary">
+                            <span class="icon fa fa-hdd-o"></span>
+                            Download
+                        </div>
+                    
+                    </a>
+                </div>
             </li>
         </ul>
         <div class="hamburger hide-desktop">
@@ -63,85 +83,124 @@
 
     <div class="section" id="experience">
         <h2 class="heading">My Experience:</h2>
-        <div class="row">
-            <div class="col-8">
-                <h3 class="heading-title web-dev">Web Developer</h3>
-                <a class="heading-link gpa" href="https://www.susqu.edu/campus-life/student-and-campus-services/information-technology-and-helpdesk" target="_blank">
-                    Information Technology, Susquehanna University
-                </a>
-            </div>
-            <div class="col-4 right">
-                <h3 class="heading-date">June 2020 - September 2021</h3>
-            </div>
-        </div>
-        
-        
-        <p>
-            After graduating college I received an offer from Susquehanna to be their Web Developer. I gladly accepted and started working on July 8, 2020 during the COVID-19 pandemic and worked remote until August 3, 2020.
-            This was a difficult time, especially because we had just hired four new assistant web developers who all needed to be trained from scratch.
-            They were also trained through two weekly zoom meetings for several months and went through a series of LinkedIn learning courses.
-            Along with this, the university partnered with <a href="https://www.livewhale.com/?home" target="_blank">LiveWhale</a> for their <a href="https://www.livewhalecalendar.com/" target="_blank">calendar</a>, and later decided to fully migrate to their content management system.
-            This was also when our department integrated a new ticketing system, <a href="https://susqu.teamdynamix.com/TDClient/2319/Portal/Home/" target="_blank">Team Dynamix.</a>
-        </p>
-        <p>
-            <em>Position Summary</em>
-        </p>
-        <ul>
-            <li>Created and maintained responsive custom web applications using an ASP.NET (MVC 5) stack 
-            </li>
-            <li>Trained and managed up to four student assistant web developers
-            </li>
-            <li>Trained to work within the Ingeniux content management system 
-            </li>
-            <li>Played a major role in the transfer process between content management systems 
-            </li>
-            <li>Utilized and designed the university’s new IT service management system Team Dynamix
-            </li>
-        </ul>
 
-        <div class="row">
-            <div class="col-8">
-                <h3 class="heading-title assistant-web-dev">Assistant Web Developer</h3>
-                <a class="heading-link gpa" href="https://www.susqu.edu/campus-life/student-and-campus-services/information-technology-and-helpdesk" target="_blank">
-                    Information Technology, Susquehanna University
-                </a>
+        <div class="timeline-section">
+            <div class="row">
+                <div class="col-8">
+                    <h3 class="heading-title web-dev">Jr. Developer</h3>
+                    <a class="heading-link gpa" href="https://www.susqu.edu/campus-life/student-and-campus-services/information-technology-and-helpdesk" target="_blank">
+                        Remote, Leidos
+                    </a>
+                </div>
+                <div class="col-4 right">
+                    <h3 class="heading-date">February 2020 - September 2022</h3>
+                </div>
             </div>
-            <div class="col-4 right">
-                <h3 class="heading-date">2018 - 2020</h3>
-            </div>
+            
+            
+            <p>
+
+            </p>
+            <p>
+                <em>Position Summary</em>
+            </p>
+            <ul>
+                <li>Utilized Scrum structured framework for product development on a daily basis 
+                </li>
+                <li>Participated in biweekly Grooming, Planning, and Retrospective meetings 
+                </li>
+                <li>Worked with a team on redesign of Property Accountability Module of DPAS 
+                </li>
+                <li>Completed more than 50+ PBI’s/Bugs and 100+ Pull Requests for release 
+                </li>
+                <li>Reviewed other team members pull requests daily 
+                </li>
+            </ul>
         </div>
-        
-        <p>
-            Coming into the position of assistant web developer, I didn't know much about the position. I knew some basic HTML and did some w3schools tutorials to learn
-            CSS and JavaScript. Then came the server side coding which really threw me for a loop for a while. However, I really enjoy coding in C# today and would say it 
-            is probably one of my favorite languages. I was mostly self taught, though I had another student programmer who gave me some tips and tricks along the way.
-        </p>
-        <p>
-            <em>Position Summary</em>
-        </p>
-        <ul>
-            <li>Works with Enterprise Systems team to develop and maintain various aspects of university websites 
-            </li>
-            <li>Improved a campus-wide Graphical Schedule that students can view for their courses each semester 
-            </li>
-            <li>Added functionality for athletic coaches to view and download team schedules 
-            </li>
-            <li>Complete overhaul of the Susquehanna University Student/Faculty/Staff directory 
-            </li>
-        </ul>
-        <!-- <p>
-            <em>Acquired skill sets</em>
-        </p>
-        <ul>
-            <li>Well developed skills in HTML &amp; CSS, including the use of the LESS and SASS frameworks
-            </li>
-            <li>Well familiarized with jQuery/JavaScript
-            </li>
-            <li>Works well with others and always treats clients well
-            </li>
-            <li>Solid understanding of web accessibility and accessibility testing resources
-            </li>
-        </ul> -->
+
+        <div class="timeline-section">
+            <div class="row">
+                <div class="col-8">
+                    <h3 class="heading-title web-dev">Web Developer</h3>
+                    <a class="heading-link gpa" href="https://www.susqu.edu/campus-life/student-and-campus-services/information-technology-and-helpdesk" target="_blank">
+                        Information Technology, Susquehanna University
+                    </a>
+                </div>
+                <div class="col-4 right">
+                    <h3 class="heading-date">June 2020 - September 2021</h3>
+                </div>
+            </div>
+            
+            
+            <p>
+                After graduating college I received an offer from Susquehanna to be their Web Developer. I gladly accepted and started working on July 8, 2020 during the COVID-19 pandemic and worked remote until August 3, 2020.
+                This was a difficult time, especially because we had just hired four new assistant web developers who all needed to be trained from scratch.
+                They were also trained through two weekly zoom meetings for several months and went through a series of LinkedIn learning courses.
+                Along with this, the university partnered with <a href="https://www.livewhale.com/?home" target="_blank">LiveWhale</a> for their <a href="https://www.livewhalecalendar.com/" target="_blank">calendar</a>, and later decided to fully migrate to their content management system.
+                This was also when our department integrated a new ticketing system, <a href="https://susqu.teamdynamix.com/TDClient/2319/Portal/Home/" target="_blank">Team Dynamix.</a>
+            </p>
+            <p>
+                <em>Position Summary</em>
+            </p>
+            <ul>
+                <li>Created and maintained responsive custom web applications using an ASP.NET (MVC 5) stack 
+                </li>
+                <li>Trained and managed up to four student assistant web developers
+                </li>
+                <li>Trained to work within the Ingeniux content management system 
+                </li>
+                <li>Played a major role in the transfer process between content management systems 
+                </li>
+                <li>Utilized and designed the university’s new IT service management system Team Dynamix
+                </li>
+            </ul>
+        </div>
+
+        <div class="timeline-section">
+            <div class="row">
+                <div class="col-8">
+                    <h3 class="heading-title assistant-web-dev">Assistant Web Developer</h3>
+                    <a class="heading-link gpa" href="https://www.susqu.edu/campus-life/student-and-campus-services/information-technology-and-helpdesk" target="_blank">
+                        Information Technology, Susquehanna University
+                    </a>
+                </div>
+                <div class="col-4 right">
+                    <h3 class="heading-date">2018 - 2020</h3>
+                </div>
+            </div>
+            
+            <p>
+                Coming into the position of assistant web developer, I didn't know much about the position. I knew some basic HTML and did some w3schools tutorials to learn
+                CSS and JavaScript. Then came the server side coding which really threw me for a loop for a while. However, I really enjoy coding in C# today and would say it 
+                is probably one of my favorite languages. I was mostly self taught, though I had another student programmer who gave me some tips and tricks along the way.
+            </p>
+            <p>
+                <em>Position Summary</em>
+            </p>
+            <ul>
+                <li>Works with Enterprise Systems team to develop and maintain various aspects of university websites 
+                </li>
+                <li>Improved a campus-wide Graphical Schedule that students can view for their courses each semester 
+                </li>
+                <li>Added functionality for athletic coaches to view and download team schedules 
+                </li>
+                <li>Complete overhaul of the Susquehanna University Student/Faculty/Staff directory 
+                </li>
+            </ul>
+            <!-- <p>
+                <em>Acquired skill sets</em>
+            </p>
+            <ul>
+                <li>Well developed skills in HTML &amp; CSS, including the use of the LESS and SASS frameworks
+                </li>
+                <li>Well familiarized with jQuery/JavaScript
+                </li>
+                <li>Works well with others and always treats clients well
+                </li>
+                <li>Solid understanding of web accessibility and accessibility testing resources
+                </li>
+            </ul> -->
+        </div>
     </div>
 
     <div class="section" id="education">
