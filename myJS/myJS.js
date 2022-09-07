@@ -5,16 +5,7 @@ $(document).ready(function() {
         } else {
             $("#to-top").slideUp();
         }
-
-        let d = document.documentElement;
-        let st = d.scrollTop || $(body).scrollTop;
-        let sh = d.scrollHeight || $(body).scrollHeight;
-    
-        let percent = st / (sh - d.clientHeight) * 100;
-    
-        $(".progress-bar-inner").width(percent + "%");
-    
-        // console.log(percent);
+        calcPercent();
     })
 
     // Get the modal
@@ -78,7 +69,16 @@ $(document).ready(function() {
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    // calcPercent();
 } 
+
+function calcPercent() {
+    let d = document.documentElement;
+    let st = d.scrollTop || $(body).scrollTop;
+    let sh = d.scrollHeight || $(body).scrollHeight;
+    let percent = st / (sh - d.clientHeight) * 100;
+    $(".progress-bar-inner").width(percent + "%");
+}
 
 function submitEmail() {
     const modal = $("#myModal");

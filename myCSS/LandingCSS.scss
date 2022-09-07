@@ -1,7 +1,7 @@
 $Blackish: #202020;
 $Dark-Grey: #3F3F3F;
 $Medium-Grey: #707070;
-$Cyan: #66FCF1;
+$Primary: #8b210b;
 $White: #FFFFFF;
 
 html {
@@ -12,21 +12,15 @@ html {
     // }
 }
 
-
-:target:before {
-    content: "";
-    display: block;
-    height: 65px;
-    margin: -65px 0 0;
-}
-
 body {
-    background: $White;
+    background: $Blackish;
     // font-family: 'Dancing Script', cursive;
     font-family: 'Roboto Condensed';
+    color: $White;
+    margin: 0;
 
     a {
-        color: $Cyan;
+        color: $Primary;
         text-decoration: none;
         font-weight: 600;
     }
@@ -41,22 +35,23 @@ body {
     cursor: pointer;
 
     i {
-        color: $Cyan;
+        color: $Primary;
     }
 }
 
-input {
-    accent-color: $Cyan;
+input, textarea {
+    accent-color: $Primary;
 }
 
 .section {
 
     margin-left: clamp(2rem, 20vw, 20rem);
     margin-right: clamp(2rem, 20vw, 20rem);
+    margin-top: 6rem;
     margin-bottom: 6rem;
 
     .heading {
-        color: $Blackish;
+        color: $White;
         font-size: 2.25rem;
         margin: 0;
 
@@ -67,7 +62,7 @@ input {
         }
 
         &-title {
-            color: $Blackish;
+            color: $White;
             font-size: 1.5rem;
             margin: .25rem 0 0 0;
         }
@@ -78,7 +73,7 @@ input {
     }
 
     p {
-        color: $Blackish;
+        color: $White;
         font-size: 1.5rem;
     }
 

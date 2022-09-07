@@ -2,20 +2,15 @@ html {
   scroll-behavior: smooth;
 }
 
-:target:before {
-  content: "";
-  display: block;
-  height: 65px;
-  margin: -65px 0 0;
-}
-
 body {
-  background: #FFFFFF;
+  background: #202020;
   font-family: 'Roboto Condensed';
+  color: #FFFFFF;
+  margin: 0;
 }
 
 body a {
-  color: #66FCF1;
+  color: #8b210b;
   text-decoration: none;
   font-weight: 600;
 }
@@ -30,21 +25,22 @@ body a {
 }
 
 .to-top i {
-  color: #66FCF1;
+  color: #8b210b;
 }
 
-input {
-  accent-color: #66FCF1;
+input, textarea {
+  accent-color: #8b210b;
 }
 
 .section {
   margin-left: clamp(2rem, 20vw, 20rem);
   margin-right: clamp(2rem, 20vw, 20rem);
+  margin-top: 6rem;
   margin-bottom: 6rem;
 }
 
 .section .heading {
-  color: #202020;
+  color: #FFFFFF;
   font-size: 2.25rem;
   margin: 0;
 }
@@ -56,7 +52,7 @@ input {
 }
 
 .section .heading-title {
-  color: #202020;
+  color: #FFFFFF;
   font-size: 1.5rem;
   margin: .25rem 0 0 0;
 }
@@ -66,7 +62,7 @@ input {
 }
 
 .section p {
-  color: #202020;
+  color: #FFFFFF;
   font-size: 1.5rem;
 }
 

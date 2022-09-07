@@ -1,0 +1,134 @@
+.my-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.my-heading .my-heading-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.my-heading .my-heading-title h3 {
+  margin-bottom: 5px;
+}
+
+.my-heading .my-heading-title h5 {
+  margin-bottom: 5px;
+  color: #707070;
+}
+
+.my-heading .my-heading-title span {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.my-heading .my-heading-title a {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.my-heading .right {
+  text-align: end;
+}
+
+.my-fade-out {
+  -webkit-animation-name: my-fade-out;
+          animation-name: my-fade-out;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.my-fade-in {
+  -webkit-animation-name: my-fade-in;
+          animation-name: my-fade-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+.my-fade-in.my-btn {
+  position: fixed !important;
+}
+
+@-webkit-keyframes my-fade-out {
+  25% {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+  }
+  50% {
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+  }
+  100% {
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes my-fade-out {
+  25% {
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+  }
+  50% {
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+  }
+  100% {
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+    opacity: 0;
+    display: none;
+  }
+}
+
+@-webkit-keyframes my-fade-in {
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+  }
+}
+
+@keyframes my-fade-in {
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+  }
+}
+/*# sourceMappingURL=myCSS.css.map */

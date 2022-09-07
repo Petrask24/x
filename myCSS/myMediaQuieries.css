@@ -76,7 +76,7 @@
     position: fixed;
     top: 0;
     display: none;
-    background: white;
+    background: #202020;
     margin: 0;
     padding: 0;
     bottom: 0;
@@ -100,6 +100,18 @@
   /* For desktop only: */
   .hide-desktop {
     display: none !important;
+  }
+  :target:before {
+    content: "";
+    display: block;
+    height: 6rem;
+    margin: -6rem 0 0;
+  }
+  .hero {
+    margin-bottom: -7rem;
+  }
+  .welcome-text, .my-img {
+    margin-bottom: 3.5rem;
   }
   [class*="col-"].right {
     text-align: right;

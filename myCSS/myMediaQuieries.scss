@@ -1,3 +1,10 @@
+$Blackish: #202020;
+$Dark-Grey: #3F3F3F;
+$Medium-Grey: #707070;
+$Light-Grey: #ebebeb;
+$Primary: #8b210b;
+$White: #FFFFFF;
+
 /* For desktop: */
 .col-1 {
   width: 8.33%;
@@ -60,7 +67,7 @@
     position: fixed;
     top: 0;
     display: none;
-    background: white;
+    background: $Blackish;
     margin: 0;
     padding: 0;
     bottom: 0;
@@ -84,6 +91,21 @@
 
   .hide-desktop {
     display: none !important;
+  }
+
+  :target:before {
+    content: "";
+    display: block;
+    height: 6rem;
+    margin: -6rem 0 0;
+}
+
+  .hero {
+    margin-bottom: -7rem;
+  }
+
+  .welcome-text, .my-img {
+    margin-bottom: 3.5rem;
   }
 
   [class*="col-"].right {

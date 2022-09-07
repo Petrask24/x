@@ -1,7 +1,7 @@
 .form {
   background: #FFFFFF;
-  -webkit-box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
-          box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+  -webkit-box-shadow: 0 30px 60px 0 rgba(139, 33, 11, 0.4);
+          box-shadow: 0 30px 60px 0 rgba(139, 33, 11, 0.4);
   border-radius: 5px;
   min-width: 300px;
   max-width: 50vw;
@@ -9,7 +9,7 @@
   margin-right: auto;
   padding-top: 5px;
   padding-bottom: 5px;
-  border-top: 5px solid #66FCF1;
+  border-top: 5px solid #8b210b;
   /*   z-index: 1; */
   -webkit-animation: bounce 1.5s infinite;
           animation: bounce 1.5s infinite;
@@ -48,7 +48,7 @@
 }
 
 .name:hover {
-  border-bottom: 5px solid #66FCF1;
+  border-bottom: 5px solid #8b210b;
   height: 30px;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -64,7 +64,7 @@
 }
 
 .email:hover {
-  border-bottom: 5px solid #66FCF1;
+  border-bottom: 5px solid #8b210b;
   height: 30px;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -82,7 +82,7 @@
 }
 
 .message:hover {
-  border-bottom: 5px solid #66FCF1;
+  border-bottom: 5px solid #8b210b;
   height: 12em;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -116,7 +116,7 @@
           transform: translateY(-3px);
   -webkit-transform: scale(1);
           transform: scale(1);
-  border-top: 5px solid #66FCF1;
+  border-top: 5px solid #8b210b;
   border-radius: 0%;
   cursor: pointer;
 }
@@ -180,7 +180,7 @@
 
 .modal-header {
   padding: 2px 16px;
-  background-color: #66FCF1;
+  background-color: #8b210b;
   color: #FFFFFF;
 }
 
@@ -191,7 +191,7 @@
 
 .modal-footer {
   padding: 2px 16px;
-  background-color: #66FCF1;
+  background-color: #8b210b;
   color: #FFFFFF;
 }
 

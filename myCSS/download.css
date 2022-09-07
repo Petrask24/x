@@ -1,0 +1,41 @@
+/* mockup code */
+@import url("//fonts.googleapis.com/css?family=Roboto:500");
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+div.download body {
+  padding: 64px 0;
+  text-align: center;
+}
+
+div.download .face-button {
+  border-radius: 10px;
+  height: 50px;
+  display: inline-block;
+  border: 3px solid #8b210b;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+div.download .face-button .icon {
+  margin-right: 6px;
+}
+
+div.download .face-button .face-primary,
+div.download .face-button .face-secondary {
+  display: block;
+  padding: 0 32px;
+  line-height: 50px;
+  -webkit-transition: margin .4s;
+  transition: margin .4s;
+}
+
+div.download .face-button .face-primary {
+  background-color: #8b210b;
+  color: #FFFFFF;
+}
+
+div.download .face-button:hover .face-primary {
+  margin-top: -50px;
+}
+/*# sourceMappingURL=download.css.map */

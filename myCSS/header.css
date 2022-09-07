@@ -1,42 +1,54 @@
-body {
-  padding: 0;
-  margin: 0;
-}
-
 .hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#66FCF1), to(#FFFFFF));
-  background-image: linear-gradient(top, #66FCF1, #FFFFFF);
-  padding: 2rem;
-}
-
-.hero .name-picture {
+  height: 100vh;
+  background-color: #707070;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.hero .name-picture img {
-  margin: 1rem;
-  border-radius: 50%;
-  width: 12rem;
+.hero .welcome-text {
+  padding-left: 5%;
+  text-align: center;
 }
 
-.hero h1 {
-  text-align: center;
+.hero .welcome-text h1 {
+  color: #8b210b;
+  text-shadow: 3px 3px 3px rgba(32, 32, 32, 0.4);
   font-size: 5rem;
+  margin: 0;
+}
+
+.hero .welcome-text h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero .welcome-text h5 {
+  color: #ebebeb;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.hero .my-img {
+  height: 90%;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -webkit-filter: grayscale(40%);
+          filter: grayscale(40%);
 }
 
 nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background: #FFFFFF;
+  background: #202020;
+  z-index: 100;
 }
 
 nav .progress-bar {
@@ -52,10 +64,11 @@ nav .progress-bar-inner {
   width: 0;
   height: 2px;
   padding: 0px;
-  background-color: #66FCF1;
+  background-color: #8b210b;
 }
 
 nav ul {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +89,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #202020;
+  color: #FFFFFF;
 }
 
 nav ul li.mobile-menu {
@@ -86,7 +99,7 @@ nav ul li.mobile-menu {
 nav ul li:after {
   display: block;
   content: '';
-  border-bottom: solid 3px #66FCF1;
+  border-bottom: solid 3px #8b210b;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
