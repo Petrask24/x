@@ -9,7 +9,6 @@ $White: #FFFFFF;
   height: 100vh;
   background-color: $Dark-Grey;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
   .welcome {
@@ -40,6 +39,7 @@ $White: #FFFFFF;
   }
 
   .my-img {
+    height: 100%;
     margin: 1rem 0;
     background-color: $Medium-Grey;
   }
