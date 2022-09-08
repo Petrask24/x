@@ -6,10 +6,6 @@ $White: #FFFFFF;
 
 html {
     scroll-behavior: smooth;
-    // * {
-    //     padding: 0;
-    //     margin: 0;
-    // }
 }
 
 body {
@@ -80,4 +76,9 @@ input, textarea {
     ul {
         font-size: 1.25rem;
     }
+}
+
+.footer {
+    text-align: center;
+    background-color: $Dark-Grey;
 }

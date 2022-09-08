@@ -17,23 +17,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/c69f0fa6c1.js" crossorigin="anonymous"></script>
     <script src="myJS/myJS.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 <title>Chris Petraskie</title>
 </head>
 <body>
 
-    <div id="to-top" class="to-top hide-desktop" onclick="topFunction()">
+    <div id="to-top" class="to-top mobile" onclick="topFunction()">
         <i class="fas fa-long-arrow-alt-up fa-3x"></i>
     </div>
 
     <div class="hero">
-        <div class="welcome-text">
-            <h1>I'm Chris Petraskie</h1>
+        <div class="welcome">
+            <h1 class="welcome-name">Chris Petraskie</h1>
             <h2>Welcome to my website!</h2>
-            <h5>*This page was created to act as a personal portfolio, not an all inclusive representation of my skills*</h5>
+            <a class="linkedin" href="https://www.linkedin.com/in/petraskie/">Find me on Linked</i></a>
         </div>
         <img src="assets/me-removebg.png" class="my-img">
+        
     </div>
 
     <nav>
@@ -68,7 +70,7 @@
                 </div>
             </li>
         </ul>
-        <div class="hamburger hide-desktop">
+        <div class="hamburger mobile">
             <label for="check">
                 <input type="checkbox" id="check"/> 
                 <span></span>
@@ -88,7 +90,7 @@
             <div class="row">
                 <div class="col-8">
                     <h3 class="heading-title web-dev">Jr. Developer</h3>
-                    <a class="heading-link gpa" href="https://www.susqu.edu/campus-life/student-and-campus-services/information-technology-and-helpdesk" target="_blank">
+                    <a class="heading-link" href="https://www.leidos.com/" target="_blank">
                         Remote, Leidos
                     </a>
                 </div>
@@ -99,7 +101,10 @@
             
             
             <p>
-
+                In February 2022 I found a developer position for Leidos through a recruiting agency. I worked on redesigning the Property Accountability module in DPAS for about 8 months until the release went out.
+                We used a modified version of Scrum which included 2-week sprints, daily standup meetings, biweekly planning, grooming, and retrospective meetings.
+                At the end of August, Leidos received news of a decreased budget for the next year and ultimately had to let some employees go, and I was one of them.
+                I really enjoyed my time there. Everyone was great to me and I learned a lot about how Software Development Life Cycles work.
             </p>
             <p>
                 <em>Position Summary</em>
@@ -311,7 +316,7 @@
             working out at the level I loved to compete at, but I intend to get after it again in the near future.
         </p>
 
-        <h2>Where I'm From</h2>
+        <h2 class="heading-title">Where I'm From</h2>
 
         <p>
             Since I was born, I've grown up in a small city in central Pennsylvania called Shamokin, PA. 
@@ -322,6 +327,8 @@
             track meets. It felt like home before I ever got there. I spent the rest of my undergrad there and 
             earned my bachelor's degree in Computer Science. 
         </p>
+
+        <h2 class="heading-title">NCAA Career</h2>
 
         <div class="row">
             <div class="col-8">
@@ -372,6 +379,9 @@
             <li>Interest in learning and putting in the effort to be really good at something
             </li>
         </ul>
+
+        <h2 class="heading-title">Leadership</h2>
+
         <div class="row">
             <div class="col-8">
                 <h3 class="heading-title fraternity">Fraternity President, Secretary</h3>
@@ -437,6 +447,9 @@
               <button type="button" class="submit formEntry" onclick="submitEmail()">Submit</button>
             </form>
           </div>
+    </div>
+    <div class="footer">
+        <h4>*This page was created as a personal portfolio and is not an all inclusive representation of my skills*</h4>
     </div>
     <div class="modal">
     </div>

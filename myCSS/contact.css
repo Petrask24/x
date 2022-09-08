@@ -1,7 +1,7 @@
 .form {
   background: #FFFFFF;
-  -webkit-box-shadow: 0 30px 60px 0 rgba(139, 33, 11, 0.4);
-          box-shadow: 0 30px 60px 0 rgba(139, 33, 11, 0.4);
+  -webkit-box-shadow: 0 30px 60px 0 rgba(235, 235, 235, 0.4);
+          box-shadow: 0 30px 60px 0 rgba(235, 235, 235, 0.4);
   border-radius: 5px;
   min-width: 300px;
   max-width: 50vw;
@@ -20,6 +20,7 @@
 }
 
 .title {
+  color: #202020;
   display: block;
   font-family: sans-serif;
   margin: 10px auto 5px;

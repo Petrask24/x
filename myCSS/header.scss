@@ -7,38 +7,42 @@ $White: #FFFFFF;
 
 .hero {
   height: 100vh;
-  background-color: $Medium-Grey;
+  background-color: $Dark-Grey;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
-  .welcome-text {
-    padding-left: 5%;
+  .welcome {
     text-align: center;
 
-    h1 {
+    &-name {
       color: $Primary;
       text-shadow: 3px 3px 3px rgba($Blackish, 0.4);
-      font-size: 5rem;
-      margin:0;
+
+      &::before {
+        content: 'I\'m ';
+        color: $White;
+      }
     }
 
-    h2 {
-      font-size: 3rem;
-      margin: 0;
-    }
+    .linkedin {
+      font-size: 1.25rem;
 
-    h5 {
-      color: $Light-Grey;
-      margin-top: 2rem;
-      font-size: 1rem;
+      &::after {
+        font: var(--fa-font-brands);
+        content: "\f08c";
+        display: inline-block;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        margin-left: .1rem;
+      }
     }
   }
 
   .my-img {
-    height: 90%;
-    align-self: end;
-    filter: grayscale(40%);
+    height: 100%;
+    margin: 1rem 0;
+    background-color: $Medium-Grey;
   }
 }
 
