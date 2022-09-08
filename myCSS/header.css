@@ -40,6 +40,7 @@
   height: 100%;
   margin: 1rem 0;
   background-color: #707070;
+  overflow: hidden;
 }
 
 nav {
