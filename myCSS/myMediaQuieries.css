@@ -87,8 +87,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .hero .my-img {
+    max-width: 100%;
     border-radius: 50%;
   }
   .nav-ul {
@@ -150,6 +154,7 @@
     margin-bottom: 3.5rem;
   }
   .hero .my-img {
+    height: 100%;
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
         align-self: end;

@@ -67,8 +67,10 @@ $White: #FFFFFF;
 
   .hero {
     flex-direction: column;
+    justify-content: space-evenly;
 
     .my-img {
+      max-width: 100%;
       border-radius: 50%;
     }
   }
@@ -124,6 +126,7 @@ $White: #FFFFFF;
     }
 
     .my-img {
+      height: 100%;
       align-self: end;
     }
   }
