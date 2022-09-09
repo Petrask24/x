@@ -81,4 +81,6 @@ input, textarea {
 .footer {
     text-align: center;
     background-color: $Dark-Grey;
+    z-index: 100;
+    position: relative;
 }

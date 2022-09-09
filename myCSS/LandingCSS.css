@@ -73,5 +73,7 @@ input, textarea {
 .footer {
   text-align: center;
   background-color: #3F3F3F;
+  z-index: 100;
+  position: relative;
 }
 /*# sourceMappingURL=LandingCSS.css.map */
