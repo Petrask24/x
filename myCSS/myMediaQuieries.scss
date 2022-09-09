@@ -67,9 +67,16 @@ $White: #FFFFFF;
 
   .hero {
     flex-direction: column;
+    justify-content: space-evenly;
 
-    .my-img {
-      border-radius: 50%;
+    .img-container {
+      margin: 1rem 0;
+      text-align: center;
+      
+      .my-img {
+        border-radius: 50%;
+        width: 100%;
+      }
     }
   }
 
@@ -120,11 +127,16 @@ $White: #FFFFFF;
 
     .welcome {
       width: 100%;
-      margin-bottom: 3.5rem;
+      margin-bottom: 4rem;
     }
 
-    .my-img {
-      align-self: end;
+    .img-container {
+      margin-bottom: 4rem;
+      height: 100%;
+
+      .my-img {
+        height: 100%;
+      }
     }
   }
 
