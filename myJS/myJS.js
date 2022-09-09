@@ -85,11 +85,14 @@ function submitEmail() {
 
     // https://smtpjs.com/
     Email.send({
-        SecureToken : "70c2b688-f393-47ce-9505-f2e43015f560",
-        To : 'chris.petraskie@gmail.com',
-        From : $(".email").val(),
+        SecureToken : "6b2be446-f260-4fcf-80a8-979610aa771f",
+        // Password: "nyvxffztemucxobx",
+        To : "chris.petraskie@gmail.com",
+        From : "chris.petraskie@gmail.com",
         Subject : "Email From " + $(".name").val(),
-        Body : $(".message").val()
+        Body : "Name: " + $(".name").val()
+            + "<br>" + "Email: " + $(".email").val()
+            + "<br>" + $(".message").val()
     }).then(
         message => openModal(message)
     );

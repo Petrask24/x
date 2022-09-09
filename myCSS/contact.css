@@ -158,6 +158,7 @@
           transform: translatex(-50%);
   background-color: #FFFFFF;
   width: 60%;
+  color: #202020;
   -webkit-animation-name: slideIn;
   -webkit-animation-duration: 0.4s;
   animation-name: slideIn;
